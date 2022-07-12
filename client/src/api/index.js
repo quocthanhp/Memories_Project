@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // url pointing to backend
-const url = "https://my-memories-project-2022.herokuapp.com/posts";
+const url = "http://localhost:5000/posts";
 
 export const fetchPosts = () => axios.get(url);
 export const createPost = (newPost) => axios.post(url, newPost)
